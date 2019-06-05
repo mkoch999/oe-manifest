@@ -3,8 +3,19 @@
   <remote fetch="https://github.com" name="github"/>
   <remote fetch="http://git.openembedded.org" name="oe"/>
   <remote fetch="https://github.com/STMicroelectronics" name="OpenSTLinux"/>
+   
+  <remote fetch="https://github.com/FullMetalUpdate/" name="fullmetalupdate" revision="refs/tags/v1.0" />
+  <remote fetch="https://github.com/Witekio/" name="witekio"/>
+  <remote fetch="https://github.com/advancedtelematic" name="advancedtelematic"/>
   
+    
+    
   <default remote="OpenSTLinux"/>
+  
+  <project remote="advancedtelematic" revision="c87072378ab37e49a794758e8c2054613eda60be" name="meta-updater" path="layers/meta-updater"/>
+  <project remote="witekio" revision="113519ad5575bcf82cbda58ec87d3cd2348f4175" name="meta-machinelearning" path="layers/meta-machinelearning"/>
+  <project remote="fullmetalupdate" name="meta-fullmetalupdate" path="layers/meta-fullmetalupdate"/>
+  <project remote="fullmetalupdate" name="meta-fullmetalupdate-extra" path="layers/meta-fullmetalupdate-extra"/>
   
   <project name="TimesysGit/meta-timesys" path="layers/meta-timesys" remote="github" revision="bf220e124514ae8129b172a5281219007421000f"/>
   <project name="bitbake" path="layers/openembedded-core/bitbake" remote="oe" revision="afee3f594e1510051a0b18e430e92549caf72fa2"/>
